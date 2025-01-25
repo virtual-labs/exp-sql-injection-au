@@ -2,37 +2,54 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary purpose of SQL Injection?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To optimize database queries",
+        "b": "To retrieve data securely",
+        "c": "To manipulate databases through malicious input",
+        "d": "To test database performance"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "SQL Injection is not about optimization.",
+        "b": "SQL Injection is not a secure retrieval method.",
+        "c": "Correct! SQL Injection manipulates databases using malicious inputs. Learn more <a href='https://www.owasp.org/index.php/SQL_Injection'>here</a>.",
+        "d": "SQL Injection is not used for performance testing."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which payload can exploit an SQL Injection vulnerability?",
+      "answers": {
+        "a": "' OR 1=1 --",
+        "b": "' AND password='1234' --",
+        "c": "' UNION SELECT * FROM users; --",
+        "d": "' DROP TABLE users; --"
+      },
+      "explanations": {
+        "a": "Correct! This payload always evaluates to true and exploits the vulnerability.",
+        "b": "This payload might fail depending on the database structure.",
+        "c": "This payload extracts data but does not always exploit authentication.",
+        "d": "This payload deletes data but is not commonly used to bypass authentication."
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What does the term 'parameterized query' mean?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "A query that uses input validation",
+        "b": "A query that uses placeholders for input values",
+        "c": "A query that combines user input with SQL statements",
+        "d": "A query that retrieves all database records"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Input validation is a separate process.",
+        "b": "Correct! Parameterized queries use placeholders to prevent SQL Injection.",
+        "c": "Directly combining input with SQL increases vulnerability.",
+        "d": "Parameterized queries are not designed to retrieve all records."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
