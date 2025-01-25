@@ -1,1 +1,1 @@
-## SQL Injection Vulnerabilities 
+## SQL injection vulnerabilities
