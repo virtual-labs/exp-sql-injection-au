@@ -51,6 +51,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of using a whitelist for input validation?",
+      "answers": {
+        "a": "To allow all input data without restrictions",
+        "b": "To define acceptable input values and reject the rest",
+        "c": "To automatically sanitize input without user control",
+        "d": "To log all user inputs for future analysis"
+      },
+      "explanations": {
+        "a": "Allowing all inputs can lead to vulnerabilities.",
+        "b": "Correct! A whitelist ensures only acceptable inputs are accepted.",
+        "c": "Sanitization alone is not as secure as input whitelisting.",
+        "d": "Logging user input does not secure the application."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which SQL command can be used to check for the presence of SQL Injection vulnerabilities?",
+      "answers": {
+        "a": "SELECT * FROM users WHERE username = 'admin' AND password = '' OR 1=1 --",
+        "b": "INSERT INTO users VALUES ('test', 'password');",
+        "c": "DELETE FROM users WHERE username = 'admin';",
+        "d": "UPDATE users SET password = 'newpassword' WHERE username = 'admin';"
+      },
+      "explanations": {
+        "a": "Correct! This query shows an example of SQL Injection used to bypass authentication.",
+        "b": "This query is an insert statement and not an injection test.",
+        "c": "This query deletes data and is not used to test SQL Injection.",
+        "d": "This query updates data, not for testing vulnerabilities."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What does the '--' in an SQL Injection query represent?",
+      "answers": {
+        "a": "A placeholder for user input",
+        "b": "The start of a comment in SQL",
+        "c": "An operator for equality comparison",
+        "d": "A delimiter for separating commands"
+      },
+      "explanations": {
+        "a": "This is incorrect. '--' does not represent user input.",
+        "b": "Correct! '--' is used to start a comment in SQL and can ignore the rest of the query.",
+        "c": "This is incorrect. '--' is not used for comparison.",
+        "d": "This is incorrect. '--' does not separate commands in SQL."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
     }
   ]
 }

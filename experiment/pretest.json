@@ -51,6 +51,57 @@
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the '--' in SQL Injection?",
+      "answers": {
+        "a": "It represents the beginning of a comment in SQL",
+        "b": "It is used to separate multiple SQL commands",
+        "c": "It is an operator used to check equality",
+        "d": "It is used to specify input parameters"
+      },
+      "explanations": {
+        "a": "Correct! '--' begins a comment and ignores the rest of the SQL query.",
+        "b": "This is incorrect. '--' is not used for separating commands.",
+        "c": "This is incorrect. '--' is not used for equality checks.",
+        "d": "This is incorrect. '--' is not for specifying parameters."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can prepared statements help prevent SQL Injection?",
+      "answers": {
+        "a": "By executing queries with hardcoded values",
+        "b": "By separating SQL logic from user input",
+        "c": "By validating input before execution",
+        "d": "By automatically escaping special characters"
+      },
+      "explanations": {
+        "a": "This does not prevent SQL Injection.",
+        "b": "Correct! Prepared statements separate SQL logic and input, preventing injection.",
+        "c": "Input validation is important but not sufficient on its own.",
+        "d": "Escaping characters is part of the solution, but prepared statements are more effective."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the risk of failing to sanitize user inputs?",
+      "answers": {
+        "a": "It could lead to data corruption",
+        "b": "It might allow attackers to inject malicious code",
+        "c": "It can improve database performance",
+        "d": "It might increase data accuracy"
+      },
+      "explanations": {
+        "a": "Data corruption is a potential risk, but the main risk is code injection.",
+        "b": "Correct! Failing to sanitize inputs makes the system vulnerable to malicious code injection.",
+        "c": "Sanitizing inputs might slightly impact performance but is crucial for security.",
+        "d": "Sanitizing inputs does not affect data accuracy, but it secures the application."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }
