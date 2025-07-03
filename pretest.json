@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the primary purpose of SQL Injection?",
+      "answers": {
+        "a": "To optimize database queries",
+        "b": "To retrieve data securely",
+        "c": "To manipulate databases through malicious input",
+        "d": "To test database performance"
+      },
+      "explanations": {
+        "a": "SQL Injection is not about optimization.",
+        "b": "SQL Injection is not a secure retrieval method.",
+        "c": "Correct! SQL Injection manipulates databases using malicious inputs. Learn more <a href='https://www.owasp.org/index.php/SQL_Injection'>here</a>.",
+        "d": "SQL Injection is not used for performance testing."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which payload can exploit an SQL Injection vulnerability?",
+      "answers": {
+        "a": "' OR 1=1 --",
+        "b": "' AND password='1234' --",
+        "c": "' UNION SELECT * FROM users; --",
+        "d": "' DROP TABLE users; --"
+      },
+      "explanations": {
+        "a": "Correct! This payload always evaluates to true and exploits the vulnerability.",
+        "b": "This payload might fail depending on the database structure.",
+        "c": "This payload extracts data but does not always exploit authentication.",
+        "d": "This payload deletes data but is not commonly used to bypass authentication."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does the term 'parameterized query' mean?",
+      "answers": {
+        "a": "A query that uses input validation",
+        "b": "A query that uses placeholders for input values",
+        "c": "A query that combines user input with SQL statements",
+        "d": "A query that retrieves all database records"
+      },
+      "explanations": {
+        "a": "Input validation is a separate process.",
+        "b": "Correct! Parameterized queries use placeholders to prevent SQL Injection.",
+        "c": "Directly combining input with SQL increases vulnerability.",
+        "d": "Parameterized queries are not designed to retrieve all records."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of the '--' in SQL Injection?",
+      "answers": {
+        "a": "It represents the beginning of a comment in SQL",
+        "b": "It is used to separate multiple SQL commands",
+        "c": "It is an operator used to check equality",
+        "d": "It is used to specify input parameters"
+      },
+      "explanations": {
+        "a": "Correct! '--' begins a comment and ignores the rest of the SQL query.",
+        "b": "This is incorrect. '--' is not used for separating commands.",
+        "c": "This is incorrect. '--' is not used for equality checks.",
+        "d": "This is incorrect. '--' is not for specifying parameters."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can prepared statements help prevent SQL Injection?",
+      "answers": {
+        "a": "By executing queries with hardcoded values",
+        "b": "By separating SQL logic from user input",
+        "c": "By validating input before execution",
+        "d": "By automatically escaping special characters"
+      },
+      "explanations": {
+        "a": "This does not prevent SQL Injection.",
+        "b": "Correct! Prepared statements separate SQL logic and input, preventing injection.",
+        "c": "Input validation is important but not sufficient on its own.",
+        "d": "Escaping characters is part of the solution, but prepared statements are more effective."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the risk of failing to sanitize user inputs?",
+      "answers": {
+        "a": "It could lead to data corruption",
+        "b": "It might allow attackers to inject malicious code",
+        "c": "It can improve database performance",
+        "d": "It might increase data accuracy"
+      },
+      "explanations": {
+        "a": "Data corruption is a potential risk, but the main risk is code injection.",
+        "b": "Correct! Failing to sanitize inputs makes the system vulnerable to malicious code injection.",
+        "c": "Sanitizing inputs might slightly impact performance but is crucial for security.",
+        "d": "Sanitizing inputs does not affect data accuracy, but it secures the application."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    }
+  ]
+}
