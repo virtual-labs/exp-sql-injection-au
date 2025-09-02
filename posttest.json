@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which practice is effective in preventing SQL Injection?",
+      "answers": {
+        "a": "Using prepared statements",
+        "b": "Allowing direct user input in SQL queries",
+        "c": "Hardcoding all SQL queries",
+        "d": "Disabling user authentication"
+      },
+      "explanations": {
+        "a": "Correct! Prepared statements separate SQL code from input, preventing SQL Injection.",
+        "b": "Allowing direct input increases vulnerability.",
+        "c": "Hardcoding queries does not address SQL Injection risks.",
+        "d": "Disabling authentication is not a secure practice."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is Blind SQL Injection?",
+      "answers": {
+        "a": "A technique that extracts data using visible outputs",
+        "b": "A technique that infers information based on application behavior",
+        "c": "A method to drop tables in a database",
+        "d": "A process that disables SQL queries"
+      },
+      "explanations": {
+        "a": "Blind SQL Injection relies on behavior, not visible outputs.",
+        "b": "Correct! Blind SQL Injection infers information through behavior.",
+        "c": "This describes a destructive action, not Blind SQL Injection.",
+        "d": "Blind SQL Injection does not disable SQL queries."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is input validation important in SQL security?",
+      "answers": {
+        "a": "To reduce query execution time",
+        "b": "To restrict unauthorized access",
+        "c": "To allow unrestricted user input",
+        "d": "To improve database indexing"
+      },
+      "explanations": {
+        "a": "Input validation is not focused on execution time.",
+        "b": "Correct! Input validation helps restrict unauthorized access by ensuring inputs are safe.",
+        "c": "Unrestricted input increases security risks.",
+        "d": "Input validation is unrelated to indexing."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the purpose of using a whitelist for input validation?",
+      "answers": {
+        "a": "To allow all input data without restrictions",
+        "b": "To define acceptable input values and reject the rest",
+        "c": "To automatically sanitize input without user control",
+        "d": "To log all user inputs for future analysis"
+      },
+      "explanations": {
+        "a": "Allowing all inputs can lead to vulnerabilities.",
+        "b": "Correct! A whitelist ensures only acceptable inputs are accepted.",
+        "c": "Sanitization alone is not as secure as input whitelisting.",
+        "d": "Logging user input does not secure the application."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which SQL command can be used to check for the presence of SQL Injection vulnerabilities?",
+      "answers": {
+        "a": "SELECT * FROM users WHERE username = 'admin' AND password = '' OR 1=1 --",
+        "b": "INSERT INTO users VALUES ('test', 'password');",
+        "c": "DELETE FROM users WHERE username = 'admin';",
+        "d": "UPDATE users SET password = 'newpassword' WHERE username = 'admin';"
+      },
+      "explanations": {
+        "a": "Correct! This query shows an example of SQL Injection used to bypass authentication.",
+        "b": "This query is an insert statement and not an injection test.",
+        "c": "This query deletes data and is not used to test SQL Injection.",
+        "d": "This query updates data, not for testing vulnerabilities."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What does the '--' in an SQL Injection query represent?",
+      "answers": {
+        "a": "A placeholder for user input",
+        "b": "The start of a comment in SQL",
+        "c": "An operator for equality comparison",
+        "d": "A delimiter for separating commands"
+      },
+      "explanations": {
+        "a": "This is incorrect. '--' does not represent user input.",
+        "b": "Correct! '--' is used to start a comment in SQL and can ignore the rest of the query.",
+        "c": "This is incorrect. '--' is not used for comparison.",
+        "d": "This is incorrect. '--' does not separate commands in SQL."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
