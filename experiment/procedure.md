@@ -1,4 +1,4 @@
-### Procedure
+
 <div>step 1.  Read the instruction and click the arrow  icon to move next instruction</div>
 <div>
  <div><img src="./images/sql11.png"/>
