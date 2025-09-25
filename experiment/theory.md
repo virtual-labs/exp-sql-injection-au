@@ -1,4 +1,3 @@
-###  Theory
 
 SQL Injection (SQLi) is a code injection technique where malicious SQL queries are inserted into input fields, aiming to manipulate a web application’s database. This section explains the foundational theory behind SQL injection, its mechanisms, and its implications, providing students with the necessary context for the simulation.
 
